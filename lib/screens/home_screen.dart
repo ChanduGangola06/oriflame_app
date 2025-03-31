@@ -1,3 +1,5 @@
+// ignore_for_file: unused_element, unnecessary_nullable_for_final_variable_declarations, use_build_context_synchronously, use_full_hex_values_for_flutter_colors
+
 import 'dart:io';
 
 import 'package:flutter/material.dart';
@@ -187,7 +189,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Container(
+                              SizedBox(
                                 width: screenWidth * 0.92,
                                 child: Row(
                                   mainAxisAlignment:
@@ -283,7 +285,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           bottom: screenHeight * 0.05,
                           left: screenWidth * 0.05,
                           right: screenWidth * 0.05,
-                          child: Container(
+                          child: SizedBox(
                             width: screenWidth * 0.91,
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
@@ -298,7 +300,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                         right: 8,
                                       ),
                                       decoration: BoxDecoration(
-                                        color: Color(0xff31313163),
+                                        color: Color(0xFF31313163),
                                         borderRadius: BorderRadius.circular(8),
                                       ),
                                       child: Text(

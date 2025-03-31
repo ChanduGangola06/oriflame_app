@@ -1,3 +1,5 @@
+// ignore_for_file: use_full_hex_values_for_flutter_colors
+
 import 'dart:io';
 
 import 'package:dots_indicator/dots_indicator.dart';
@@ -9,13 +11,14 @@ class DottedBorderNavigation extends StatefulWidget {
   final Function(int) onIndexChanged;
 
   const DottedBorderNavigation({
-    Key? key,
+    super.key,
     required this.images,
     required this.currentIndex,
     required this.onIndexChanged,
-  }) : super(key: key);
+  });
 
   @override
+  // ignore: library_private_types_in_public_api
   _DottedBorderNavigationState createState() => _DottedBorderNavigationState();
 }
 
